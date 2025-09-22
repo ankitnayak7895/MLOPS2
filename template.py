@@ -1,5 +1,6 @@
-# this is a template file and in this file I have eto keep what all the 
-# files I want to create in the project in automated way not manual way
+# this is a template file and in this file I have to keep what all the 
+# files I want to create in my project in automated way not manual way with
+# complete paths.
 
 import os
 from pathlib import Path
@@ -12,11 +13,11 @@ import logging
 
 list_of_files=[
       
-      ".github/workflows/.gitkeep",
+      ".github/workflows/.gitkeep", # used for CI/CDeployment 
       
-      "src/__init__.py",
+      "src/__init__.py", # this is the source code folder
       
-      "src/components/__init__"
+      "src/components/__init__",
       "src/components/data_ingestion.py",
       "src/components/data_information.py",
       "src/components/model_trainer.py",
@@ -34,7 +35,7 @@ list_of_files=[
       "src/logger/logger.py",
       
       "src/exception/__init__.py",
-      "src/exception/exception.py"
+      "src/exception/exceptions.py"
       
       "test/unit/__init__.py",
       "test/integration/__init__.py",
@@ -70,5 +71,5 @@ for filepath in list_of_files:
             
       if not(os.path.exists(filepath) and os.path.getsize(filepath)==0):
             with open(filepath,'w') as f:
-                  pass
+                  pass # create an empty file
                   logging.info(f"Creating empty file:{filepath}")
