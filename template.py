@@ -35,7 +35,7 @@ list_of_files=[
       "src/logger/logger.py",
       
       "src/exception/__init__.py",
-      "src/exception/exceptions.py"
+      "src/exception/exceptions.py",
       
       "test/unit/__init__.py",
       "test/integration/__init__.py",
@@ -52,7 +52,7 @@ list_of_files=[
       
       "pyproject.toml",
       
-      "tox.ini",
+      "tox.ini", # for test the code in local env/system
       
       "experiments/experiment.ipynb"
 ]
